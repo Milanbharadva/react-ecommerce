@@ -77,13 +77,18 @@
         position: fixed;
         right: 0;
         width: 150px;
+        text-align: end;
         transform: translate(30px);
-        transition: all 3s;
+        transition: all 1s;
+        height: 200px;
+        background-color: white;
+        z-index: 999;
     }
     .nav-link{
         margin-bottom: 0.5rem;
     }
 }
 .none{
-    display: none;
+    position: absolute;
+    right: -200px;
 }

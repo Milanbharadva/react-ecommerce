@@ -4,10 +4,8 @@ import logo from "../../images/logo.jpg";
 import "./Navbar.css";
 const Navbar = () => {
   function togglenav(){
-    let elem=document.getElementsByClassName("mobile-menu")[0]
-    elem.classList.toggle("none")
+    document.getElementsByClassName("mobile-menu")[0].classList.toggle("none")
   }
-  console.log("component")
   return (
     
     <>
