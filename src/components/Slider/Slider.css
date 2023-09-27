@@ -1,0 +1,32 @@
+.slider-image>img {
+    max-width: 99vw;
+    /* height: auto; */
+}
+
+.slider-image {
+    position: relative;
+}
+
+.text-contsiner-slider {
+    position: absolute;
+    top: 9rem;
+    width: 30%;
+    margin-left: 5rem;
+    text-transform: capitalize;
+}
+
+.text-contsiner-slider>h5 {
+    color: #e53637;
+    font-weight: 600;
+    font-size: 14px;
+}
+.text-contsiner-slider>h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 58px;
+}
+.text-contsiner-slider>p{
+    font-size: 1rem;
+    line-height: 28px;
+    margin-bottom: 35px;
+}

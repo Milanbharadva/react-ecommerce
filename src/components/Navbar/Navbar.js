@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.jpg";
 import "./Navbar.css";
 const Navbar = () => {
-  function togglenav(){
-    document.getElementsByClassName("mobile-menu")[0].classList.toggle("none")
+  function togglenav() {
+    document.getElementsByClassName("mobile-menu")[0].classList.toggle("none");
   }
   return (
-    
     <>
+    <header className="container">
       <nav className="main-container">
         <div className="logo-container">
           <img src={logo} alt="logo of male fashion" />
@@ -78,34 +78,35 @@ const Navbar = () => {
           <span className="line"></span>
           <span className="line"></span>
         </div>
-      </nav>    
-          <div className="mobile-menu none" >
-          <li className="nav-link">
-            <NavLink to="/" className="nav-link-inner">
-              Home
-            </NavLink>
-          </li>
-          <li className="nav-link">
-            <NavLink to="/shop" className="nav-link-inner">
-              Shop
-            </NavLink>
-          </li>
-          <li className="nav-link">
-            <NavLink to="/pages" className="nav-link-inner">
-              Pages
-            </NavLink>
-          </li>
-          <li className="nav-link">
-            <NavLink to="/blogs" className="nav-link-inner">
-              Blogs
-            </NavLink>
-          </li>
-          <li className="nav-link">
-            <NavLink to="/contact" className="nav-link-inner">
-              Contacts
-            </NavLink>
-          </li>
-          </div>
+      </nav>
+      <div className="mobile-menu none">
+        <li className="nav-link">
+          <NavLink to="/" className="nav-link-inner">
+            Home
+          </NavLink>
+        </li>
+        <li className="nav-link">
+          <NavLink to="/shop" className="nav-link-inner">
+            Shop
+          </NavLink>
+        </li>
+        <li className="nav-link">
+          <NavLink to="/pages" className="nav-link-inner">
+            Pages
+          </NavLink>
+        </li>
+        <li className="nav-link">
+          <NavLink to="/blogs" className="nav-link-inner">
+            Blogs
+          </NavLink>
+        </li>
+        <li className="nav-link">
+          <NavLink to="/contact" className="nav-link-inner">
+            Contacts
+          </NavLink>
+        </li>
+      </div>
+      </header>
 
     </>
   );
