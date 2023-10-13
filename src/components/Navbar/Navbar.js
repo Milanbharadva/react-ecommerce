@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 const Navbar = () => {
   const shownav = () => {
@@ -7,17 +7,17 @@ const Navbar = () => {
   return (
     <>
       <header className="flex justify-between my-1 mx-3">
-        <div className="w-[20%]">
+        <div className="">
           <NavLink to="/">
-            <img src={logo} className="w-[150px] " alt="" />
+            <img src={logo} className="w-[100px]" alt="" />
           </NavLink>
         </div>
         <div className="sm:flex sm:justify-around hidden  items-center w-[80%]">
           <NavLink to="/">
             <span>HOME</span>
           </NavLink>
-          <NavLink to="/about">
-            <span>ABOUT</span>
+          <NavLink to="/products">
+            <span>PRODUCTS</span>
           </NavLink>
           <NavLink to="/contact">
             <span>CONTACT</span>
@@ -42,9 +42,9 @@ const Navbar = () => {
             <NavLink to="/">
               <span>HOME</span>
             </NavLink>
-            <NavLink to="/about">
-              <span>ABOUT</span>
-            </NavLink>
+            <NavLink to="/products">
+            <span>PRODUCTS</span>
+          </NavLink>
             <NavLink to="/contact">
               <span>CONTACT</span>
             </NavLink>
