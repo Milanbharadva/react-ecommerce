@@ -17,7 +17,8 @@ const MobileData = [
   {
     ID: "1",
     productname: "samsung s23 ultra",
-    productimage: "product/1689594153-Samsung-S23Ultra-493665085-i-1-1200Wx1200H.jpeg",
+    productimage:
+      "product/1689594153-Samsung-S23Ultra-493665085-i-1-1200Wx1200H.jpeg",
     productprice: "1,35,000",
     productram: "12",
     productrom: "512",
@@ -233,7 +234,8 @@ const MobileData = [
   {
     ID: "16",
     productname: "IPHONE 15 PRO MAX",
-    productimage: "product/1695288788-Apple-iPhone15Pro-493839339-i-1-1200Wx1200H.jpeg",
+    productimage:
+      "product/1695288788-Apple-iPhone15Pro-493839339-i-1-1200Wx1200H.jpeg",
     productprice: "1,99,900",
     productram: "8",
     productrom: "1024",
