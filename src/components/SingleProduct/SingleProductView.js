@@ -1,9 +1,8 @@
-import image1 from "../../assets/product/1689594153-Samsung-S23Ultra-493665085-i-1-1200Wx1200H.jpeg";
 const SingleProductView = ({ data }) => {
   return (
     <div className="flex mt-5 lg:flex-row flex-col mx-5 items-center justify-center  lg:justify-around lg:mx-28">
       <div>
-        <img src={image1} height="315px" width="415px" alt="" />
+        <img src={data.productimage} height="315px" width="415px" alt="" />
       </div>
       <div className=" text-xl font-bold flex flex-col space-y-5">
         <h2 className="text-4xl font-bold">{data.productname.toUpperCase()}</h2>

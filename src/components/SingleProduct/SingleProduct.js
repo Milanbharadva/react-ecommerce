@@ -6,8 +6,9 @@ const SingleProduct = () => {
   const { productid } = dataurl;
   return (
     <>
-      {MobileData.filter(items =>items.ID===productid)
-      .map(item=><SingleProductView data={item} key={item.ID}/>)}
+      {MobileData.filter((items) => items.ID === productid).map((item) => (
+        <SingleProductView data={item} key={item.ID} />
+      ))}
     </>
   );
 };

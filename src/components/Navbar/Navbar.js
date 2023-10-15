@@ -9,7 +9,7 @@ const Navbar = () => {
       <header className="flex justify-between my-1 mx-3">
         <div className="">
           <NavLink to="/">
-            <img src={logo} className="w-[100px]" alt="" />
+            <img src={logo} className="w-[100px] sm:w-[150px]" alt="" />
           </NavLink>
         </div>
         <div className="sm:flex sm:justify-around hidden  items-center w-[80%]">

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import ProductList from "./components/ProductList/ProductList";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
 
+
 function App() {
   return (
     <div className="App">
