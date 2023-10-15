@@ -3,16 +3,25 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import ProductList from "./components/ProductList/ProductList";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
-
+import Signin from "./components/Signin/Signin";
+import NoteState from "./Context/noteState";
+import Signout from "./components/Signout/Signout";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/products" Component={ProductList} />
-        <Route path="/products/single-product/:productid" Component={SingleProduct} />
-      </Routes>
+      <NoteState>
+        <Navbar />
+        <Routes>
+          <Route path="/signin" Component={Signin} />
+          <Route path="/products" Component={ProductList} />
+          <Route path="/signout" Component={Signout} />
+          <Route
+            path="/products/single-product/:productid"
+            Component={SingleProduct}
+          />
+        </Routes>
+      </NoteState>
     </div>
   );
 }

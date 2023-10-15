@@ -1,6 +1,11 @@
 import { NavLink, Route, Routes } from "react-router-dom";
+import noteContext from "../../Context/noteContext";
 import logo from "../../assets/images/logo.png";
+import { useContext } from "react";
+
 const Navbar = () => {
+  const a = useContext(noteContext);
+  console.log(a.state.status)
   const shownav = () => {
     document.getElementById("navitems").classList.toggle("hidden");
   };
@@ -25,9 +30,16 @@ const Navbar = () => {
           <NavLink to="/shop">
             <span>SHOP</span>
           </NavLink>
-          <NavLink to="/signin">
+          {!a.state.status&&
+            <NavLink to="/signin">
             <span>SIGNIN</span>
           </NavLink>
+          }
+          {a.state.status&&
+            <NavLink to="/signout">
+            <span>SIGN OUT</span>
+          </NavLink>
+          }
         </div>
         <div
           className="space-y-2 flex fixed right-2 top-3 flex-col cursor-pointer justify-center sm:hidden"
@@ -43,8 +55,8 @@ const Navbar = () => {
               <span>HOME</span>
             </NavLink>
             <NavLink to="/products">
-            <span>PRODUCTS</span>
-          </NavLink>
+              <span>PRODUCTS</span>
+            </NavLink>
             <NavLink to="/contact">
               <span>CONTACT</span>
             </NavLink>
