@@ -7,7 +7,7 @@ const SingleProduct = ({ data }) => {
     <div className="md:mx-28 border-[#dee2e6] border p-5 border-solid">
       <div className="flex flex-col lg:flex-row justify-between items-center">
         <div>
-          <img src={data.productimage} height="200px" width="200px" alt="" />
+          <img src={`product/${data.productimage}`} height="200px" width="200px" alt="" />
         </div>
         <div className="flex lg:items-start items-center justify-center space-y-5 flex-col lg:w-[50%]">
           <div>

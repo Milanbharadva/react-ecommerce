@@ -29,16 +29,16 @@ const Navbar = () => {
           <NavLink to="/shop">
             <span>SHOP</span>
           </NavLink>
-          {!a.state.status&&
+          {!a.state.status && (
             <NavLink to="/signin">
-            <span>SIGNIN</span>
-          </NavLink>
-          }
-          {a.state.status&&
+              <span>SIGNIN</span>
+            </NavLink>
+          )}
+          {a.state.status && (
             <NavLink to="/signout">
-            <span>SIGN OUT</span>
-          </NavLink>
-          }
+              <span>SIGN OUT</span>
+            </NavLink>
+          )}
         </div>
         <div
           className="space-y-2 flex fixed right-2 top-3 flex-col cursor-pointer justify-center sm:hidden"
