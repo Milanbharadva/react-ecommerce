@@ -6,6 +6,8 @@ import SingleProduct from "./components/SingleProduct/SingleProduct";
 import Signin from "./components/Signin/Signin";
 import NoteState from "./Context/noteState";
 import Signout from "./components/Signout/Signout";
+import Register from "./components/Register/Register";
+import Slider from "./components/Home/Slider/Slider";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <NoteState>
         <Navbar />
         <Routes>
+          <Route path="/" Component={Slider} />
           <Route path="/signin" Component={Signin} />
+          <Route path="/register" Component={Register} />
           <Route path="/products" Component={ProductList} />
           <Route path="/signout" Component={Signout} />
           <Route

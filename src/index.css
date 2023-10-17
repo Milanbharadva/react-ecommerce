@@ -11,3 +11,10 @@
     margin-bottom: 10px;
     border-radius: 50px;
 }
+
+.svg-icons {
+    fill: #F28123;
+    border: 2px #F28123 dotted ;
+    border-radius: 999px;
+    padding: 10px;
+}

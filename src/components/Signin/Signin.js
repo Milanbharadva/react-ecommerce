@@ -17,7 +17,6 @@ const Signin = () => {
       (userdata) => userdata.email === email && userdata.password === password
     ).map((user) => {
       setStatus(true);
-      console.log(user);
       a.update();
       navigate("/");
     });
@@ -53,6 +52,15 @@ const Signin = () => {
           className="cursor-pointer border border-black"
         />
       </form>
+      Don't have an account ?
+      <button
+        className="cursor-pointer"
+        onClick={() => {
+          navigate("/register");
+        }}
+      >
+        Register now
+      </button>
     </div>
   );
 };

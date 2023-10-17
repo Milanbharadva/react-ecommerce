@@ -5,7 +5,6 @@ import { useContext } from "react";
 
 const Navbar = () => {
   const a = useContext(noteContext);
-  console.log(a.state.status)
   const shownav = () => {
     document.getElementById("navitems").classList.toggle("hidden");
   };
